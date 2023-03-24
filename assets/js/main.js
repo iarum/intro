@@ -1,9 +1,4 @@
-const words = [
-    'Hello there.',
-    'Do you know who am I?',
-    'I don\'t recommend you to find out',
-    'Wait for it..'
-];
+const words = prompt('Enter words separated by comma').split(',');
 
 for (let i = 0; i < words.length; i++) {
     setTimeout(function () {
@@ -14,3 +9,10 @@ for (let i = 0; i < words.length; i++) {
         })
     }, ((i + 1) * 2) + '000')
 }
+
+// const words = [
+//     'Hello there.',
+//     'Do you know who am I?',
+//     'I don\'t recommend you to find out',
+//     'Wait for it..'
+// ];
